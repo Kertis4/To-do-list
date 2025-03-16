@@ -1,4 +1,82 @@
-body{
-    marign: 0;
-    font-family: Arial;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Full-page layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f4f4f4, #d9d9d9);
+    color: #333;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0033cc;
+    background: linear-gradient(90deg, #ff7700, #0033cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Centered Card */
+.container {
+    max-width: 500px;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Template text */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff7700;
+}
+
+/* Accent line */
+.divider {
+    width: 60px;
+    height: 5px;
+    background: #0033cc;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+/* Subtle grey text */
+p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Call-to-action button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #0033cc;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #002299;
 }
